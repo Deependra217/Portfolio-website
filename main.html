@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deependra Singh - Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+  <main>
+    <!---------------------------- My Section ---------------------------->
+    <section id="my">
+      <h2 class="my-heading">Hello, Myself Deependra Singh</h2>
+      <br>
+      <div class="my-photo">
+        <img src="download.jpg" alt="My Photo" class="profile-photo">
+      </div>
+      <p class="hero-bio">Hey there! I’m Deependra Singh, a 2nd-year student at 
+        IIT Guwahati from the Biosciences and Bioengineering department.
+        I enjoy exploring the world of product management and I'm currently 
+        diving into web development and Web3. I have working knowledge of HTML, 
+        CSS, JavaScript, and C++. Feel free to explore my portfolio below!</p>
+    </section>
+
+    <!---------------------------- Projects Section ---------------------------->
+    <section id="projects">
+      <h2 class="section-heading">Projects</h2>
+      <div class="projects-container">
+        <div class="project-item" style="background-image: url('p1_bgi.jpg');">
+          <a href="https://drive.google.com/file/d/1LTJzQHwBftkaJj1ptaCpmrjGAy_WKVaF/view?usp=sharing" 
+            target="_blank"><h3>CNA-MSRC</h3></a>
+          <p>Analyzed platform occupancy and train movement data from Mumbai Suburban Railway using Python 
+            to identify inefficiencies. Derived actionable insights to improve scheduling and platform usage 
+            for better operational efficiency.</p>
+        </div>
+        <div class="project-item" style="background-image: url('p2_bgi.jpg');">
+          <a href="https://drive.google.com/file/d/1vLV5UiGVMUhbNX03vM4bG7oJMPjmMpy9/view?usp=sharing" 
+            target="_blank"><h3>URBAN SPACE MANAGEMENT</h3></a>
+          <p>Developed a product concept to address the issue of underutilized urban spaces in cities.
+            Proposed a tech-driven platform to connect vacant areas with individuals or businesses in
+            need of short-term space.</p>
+        </div>
+        <div class="project-item" style="background-image: url('p3_bgi.jpg');">
+          <a href="https://drive.google.com/file/d/1CkEd2YuYr6vpK3ejkyEO_BfV9OD2dbzL/view?usp=sharing" 
+            target="_blank"><h3>ZERO-to-ONE</h3></a>
+          <p>Conducted an in-depth analysis of Magicpin’s business model, growth strategy, and operational
+            framework. Proposed data-backed recommendations to enhance user engagement, merchant acquisition,
+            and platform scalability.</p>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------- About Me Section ---------------------------->
+    <section id="about">
+      <h2 class="section-heading">About Me</h2>
+      <div class="about-content">
+        <p>Hello! I’m Deependra Singh, a 2nd-year student in the Biosciences and Bioengineering Department at
+            IIT Guwahati.</p>
+        <p>I’m passionate about the intersection of technology, design, and business, which is why I’ve been drawn to product consulting and management.
+            Over the past year, I’ve honed my technical toolkit—HTML, CSS, JavaScript, Java, C++,
+            basic DSA, and Figma—and applied these skills across a variety of consulting and strategy challenges:
+            </p><br>
+
+        <p style="text-align: left;">1. Winter Consulting (IITG CAC Club): Guided freshers through analytics and non-tech domains.
+            </p>
+        <p style="text-align: left;">2. Strategy Storm: Advanced to the second round of this high-impact case competition.</p>
+        <p style="text-align: left;">3. Kriti Inter-Hostel Events: Delivered two modules—EcoEdge (solar-energy market analysis) and a campus 
+            water-wastage solution.</p>
+        <p style="text-align: left;">4. Mumbai Suburban Railway Project: Analyzed platform data with Python to drive efficiency improvements.</p>
+        <p style="text-align: left;">5. Urban Space & Magicpin Studies: Conducted product-strategy deep dives and proposed data-driven growth 
+            plans.</p><br>
+
+        <p>I’m currently building this very portfolio website using HTML, CSS, and JavaScript, and I’m active in 
+            the Product Module of E-Cell IITG with aspirations to join WebOps next. I’m always seeking to deepen my
+            expertise in product strategy, web development, Web3, and AI/ML. </p>
+        <p>When I’m not ideating on my next product roadmap, I’m sketching with pencils, hitting the gym, exploring new music genres, or binge-watching anime.</p><br>
+        <blockquote>
+          <p>"“Your most unhappy customers are your greatest source of learning.”
+— Bill Gates"</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!---------------------------- Contact Section ---------------------------->
+    <section id="contact">
+      <h2 class="section-heading">Contact Me</h2>
+      <form novalidate>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required minlength="2">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required minlength="2">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="abc@xyz.something">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="I would love to hire you for ... ;)"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="social-links">
+      <a href="https://www.instagram.com/_.deependra._.singh._/" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/deependra-singh-b3b633319/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Deependra217" target="_blank">GitHub</a>
+    </div>
+    <p>&copy; 2025 Deependra Singh</p>
+  </footer>
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    // Form validation feedback
+    const form = document.querySelector('form');
+    form.addEventListener('submit', e => {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        alert('Please fill out all fields correctly.');
+      }
+    });
+  </script>
+</body>
+</html>

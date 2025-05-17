@@ -1,0 +1,158 @@
+:root {
+  --dark-blue: #1d3557;
+  --mid-blue: #457b9d;
+  --light-blue: #a8dadc;
+  --off-white: #f1faee;
+  --accent-red: #e63946;
+  --black: #000000;
+  --white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: var(--off-white);
+  color: var(--dark-blue);
+  line-height: 1.6;
+}
+header {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: var(--accent-red);
+}
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+/* Projects Section */
+#projects {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+#projects .projects-container {
+  display: flex;
+  gap: 2rem;
+}
+#projects .project-item {
+  padding: 1rem;
+  flex: 1;
+  border-radius: 8px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: var(--dark-blue);
+}
+#projects .project-item a h3 {
+  background-color: rgba(255, 255, 255, 0.75); /* white with 75% opacity */
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+#projects .project-item p {
+  background-color: rgba(255, 255, 255, 0.75); /* white with 75% opacity */
+  margin-top: 0.5rem;
+}
+/* About Me Section */
+#about {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.profile-photo {
+  width: 200px;
+  height: 200
+  px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+/* Contact Section */
+#contact{
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+}
+#contact label {
+  font-weight: bold;
+}
+#contact input,
+#contact textarea {
+  padding: 0.5rem;
+  border: 2px solid var(--mid-blue);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+#contact input:invalid,
+#contact textarea:invalid {
+  border-color: var(--accent-red);
+}
+#contact button {
+  width: 150px;
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--accent-red);
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+/* Footer */
+footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+footer .social-links a {
+  margin: 0 1rem;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  #projects .projects-container {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
