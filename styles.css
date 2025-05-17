@@ -70,12 +70,12 @@ main {
   color: var(--dark-blue);
 }
 #projects .project-item a h3 {
-  background-color: rgba(255, 255, 255, 0.75); /* white with 75% opacity */
+  background-color: rgba(255, 255, 255, 0.85); 
   color: var(--dark-blue);
   text-decoration: none;
 }
 #projects .project-item p {
-  background-color: rgba(255, 255, 255, 0.75); /* white with 75% opacity */
+  background-color: rgba(255, 255, 255, 0.85);
   margin-top: 0.5rem;
 }
 /* About Me Section */
